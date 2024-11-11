@@ -64,3 +64,35 @@ function lookup(address debtor , address creditor) public view returns (uint){
 } 
 
 }
+//     /* BẢN NGẮN HƠN */      //    
+//-----------------------------//
+/*
+contract Splitwise {
+    //debtbook['debtor']['creditor']
+    mapping(address => mapping(address => uint32)) debtbook;
+
+    function lookup(address debtor, address creditor) external view returns (uint32 ret){
+        return debtbook[debtor][creditor];
+    }
+    function add_IOU_chain(address creditor, uint32 amount, address[] calldata path, uint32 flow) external{
+        require(amount > 0, "transaction amount must be positive!");
+
+        require(creditor != msg.sender, "debtor and creditor cannot be the same!");
+
+        require(path[0] == path[path.length-1]);
+
+        debtbook[msg.sender][creditor] += amount;
+  
+        if(flow > 0){
+
+            require(path[0]==path[path.length - 1], "path must be a loop!");
+            for(uint i = 0;i < path.length - 1;i++){
+                
+                require(debtbook[path[i]][path[i+1]] >= flow, "loop incomplete!");
+             
+                debtbook[path[i]][path[i+1]] -= flow;
+            }
+        }
+    }
+}
+*/
