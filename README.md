@@ -127,7 +127,7 @@ npx hardhat run scripts/deploy.js
 - Tạo một giao diện cơ bản để nhập thông tin và kết nối với hợp đồng thông minh.
 
 `2. style.css`
-Định dạng giao diện với các kiểu dáng CSS cơ bản.
+- Định dạng giao diện với các kiểu dáng CSS cơ bản.
 
 `3. script.js`
 - Kết nối với blockchain và hợp đồng thông qua web3.js hoặc ethers.js.
