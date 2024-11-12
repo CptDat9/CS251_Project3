@@ -42,9 +42,9 @@ Mục tiêu là triển khai hợp đồng trên **BSC Testnet** và tích hợp
  + Cấu hình **Hardhat** để triển khai và kiểm thử hợp đồng.
  + Ứng dụng **web3/Dapps**.
 ## Yêu cầu hệ thống
-**Node.js** và **npm** phiên bản mới nhất.
-**Hardhat** để triển khai và quản lý project.
-**Git** để quản lý mã nguồn.
+- **Node.js** và **npm** phiên bản mới nhất.
+- **Hardhat** để triển khai và quản lý project.
+- **Git** để quản lý mã nguồn.
 ## Cài đặt project
 ### Bước 1: Tạo thư mục project mới và khởi tạo **Hardhat**
 Mở `terminal` và tạo một thư mục mới cho project của bạn:
@@ -101,7 +101,7 @@ Hệ thống **IOU** (I Owe You) này sử dụng thuật toán cập nhật cá
 - Tìm đường đi: Sử dụng thuật toán **BFS** để xác định chuỗi các khoản nợ qua lại giữa các địa chỉ và tối thiểu hóa nợ.
 - Tối ưu hóa nợ: Nếu có chuỗi nợ, hệ thống giảm nợ trên chuỗi này bằng cách cập nhật giá trị nhỏ nhất giữa các khoản nợ.
 - Tự động cập nhật: Nếu có sự thay đổi, các khoản nợ được cập nhật tương ứng để tối ưu hóa việc trả nợ.
-- Ví dụ, nếu A nợ B 10 và B nợ C 10, việc gọi **add_IOU** sẽ giúp cập nhật trạng thái và tối ưu hóa bằng cách giảm số nợ của A.
+- Ví dụ, nếu A nợ B 10 và B nợ C 10 C nợ A 14, việc gọi **add_IOU** sẽ giúp cập nhật trạng thái và tối ưu hóa bằng cách giảm số nợ của A, B và đưa về thành C nợ A 14-10 = 4 (trừ đi cạnh có trọng số min trong đồ thị).
 
 ## Các lệnh cơ bản
 - Hiển thị trợ giúp
