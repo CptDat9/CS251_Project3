@@ -19,7 +19,7 @@ npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
 
-## Hướng dẫn tạo Hardhat Project - Crypto Zombie Hardhat Project
+## Hướng dẫn tạo Hardhat Project - Splitwise contract
 
 ## Mục lục
 - [Giới thiệu](#giới-thiệu)
