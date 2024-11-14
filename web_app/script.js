@@ -1,8 +1,9 @@
 const { ethers } = require("hardhat");
+const provider = ethers.provider;
 // =============================================================================
 //                                  Config
 // =============================================================================
-const provider = new ethers.providers.JsonRpcProvider("http://localhost:8545");
+// const provider = new ethers.providers.JsonRpcProvider("http://localhost:8545"); (sẽ dùng nếu cần dùng local host thì phải xóa provider ở trên đi)
 var defaultAccount;
 
 // Constant we use later
