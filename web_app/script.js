@@ -1,4 +1,4 @@
-const { ethers } = require("hardhat");
+import { ethers } from "ethers";
 const provider = ethers.provider;
 // =============================================================================
 //                                  Config
